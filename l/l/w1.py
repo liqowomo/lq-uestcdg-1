@@ -83,7 +83,7 @@ PrivateKey : 0x608a510934421f52fa4636080a8765f742122c527aec807fb83900ae4ed57a64
 
 
 def t1():
-    '''Get all transactions on the sepolia chain with moralis api'''
+    '''Get all transactions on the SEPOLIA CHAIN with moralis api'''
 
     params1 = {
         "address": "0x498b302db295199b81af90Df66F330D5dA2776D0",
@@ -118,7 +118,7 @@ def t1():
 
 
 def t2():
-    '''Get all transactions on the POLYGON MUMBAI chian with moralis api'''
+    '''Get all transactions on the POLYGON MUMBAI CHAIN with moralis api'''
 
     params2 = {
         "address": "0x498b302db295199b81af90Df66F330D5dA2776D0",
@@ -151,7 +151,7 @@ def t2():
 
 
 def t3():
-    '''Get all transactions on the BSCTESTNET CHAIN n with moralis api'''
+    '''Get all transactions on the BSCTESTNET CHAIN with moralis api'''
 
     params3 = {
         "address": "0x498b302db295199b81af90Df66F330D5dA2776D0",

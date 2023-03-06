@@ -65,6 +65,8 @@ class colors:
 
 
 def header():
+    '''Header Function that prints account details'''
+
     print(colors.fg.yellow,
           '''
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -84,6 +86,8 @@ PrivateKey : 0xbfd81cadf97bed4c4a5f75b12f1b5e9315eee787f24a9b14b1c94dde2f139bba
 
 
 def t1():
+    '''Get all transactions on the SEPOLIA CHAIN with moralis api'''
+
     params1 = {
         "address": "0xfB4E8AfEaB22c5a7AC8F4c719D2D75b93bdc5CFa",
         "chain": "sepolia",
@@ -117,6 +121,8 @@ def t1():
 
 
 def t2():
+    '''Get all transactions on the POLYGON MUMBAI CHAIN with moralis api'''
+
     params2 = {
         "address": "0xfB4E8AfEaB22c5a7AC8F4c719D2D75b93bdc5CFa",
         "chain": "mumbai",
@@ -148,6 +154,8 @@ def t2():
 
 
 def t3():
+    '''Get all transactions on the BSCTESTNET CHAIN with moralis api'''
+
     params3 = {
         "address": "0xfB4E8AfEaB22c5a7AC8F4c719D2D75b93bdc5CFa",
         "chain": "bsc testnet",
