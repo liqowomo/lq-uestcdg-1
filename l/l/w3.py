@@ -61,11 +61,31 @@ class colors:
         cyan = '\033[46m'
         lightgrey = '\033[47m'
 
+
+def header():
+    '''Header Function that prints account details'''
+
+    print(colors.fg.yellow,
+          '''
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+Transaction Details for 
+Wallet     : 0x9436E627D55c5c7d8247bEa3d5E35B9ab8e44006
+PrivateKey : 0x49643a1fac5e213c767dad6f7654d5288b564b5bda1c39c2c340e184649f0a71
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+          ''')
+
+
 ### Function 1 ###
 ### Print transactions in from sepolia network ###
 
 
 def t1():
+    '''Get all transactions on the SEPOLIA CHAIN with moralis api'''
+
     params1 = {
         "address": "0x9436E627D55c5c7d8247bEa3d5E35B9ab8e44006",
         "chain": "sepolia",
@@ -99,6 +119,8 @@ def t1():
 
 
 def t2():
+    '''Get all transactions on the POLYGON MUMBAI CHAIN with moralis api'''
+
     params2 = {
         "address": "0x9436E627D55c5c7d8247bEa3d5E35B9ab8e44006",
         "chain": "mumbai",
@@ -130,6 +152,8 @@ def t2():
 
 
 def t3():
+    '''Get all transactions on the BSCTESTNET CHAIN with moralis api'''
+
     params3 = {
         "address": "0x9436E627D55c5c7d8247bEa3d5E35B9ab8e44006",
         "chain": "bsc testnet",
@@ -159,6 +183,7 @@ def t3():
 
 
 # Call Defined functions from above
+header()
 t1()
 t2()
 t3()
