@@ -61,6 +61,26 @@ class colors:
         cyan = '\033[46m'
         lightgrey = '\033[47m'
 
+## Header Function showing account details 
+
+def header():
+    '''Header Function that prints account details'''
+
+    print(colors.fg.yellow,
+          '''
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+Transaction Details for 
+Wallet     : 0xFB4086b4Ae138B2e91B64f47385ffdac8112f526
+PrivateKey : 0x8e6362e5d9a4a281680161a50c8fb5898929095b18ebbd58c716d844814cce24
+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+          ''')
+
+
+
 ### Function 1 ###
 ### Print transactions in from sepolia network ###
 
@@ -159,6 +179,7 @@ def t3():
 
 
 # Call Defined functions from above
+header()
 t1()
 t2()
 t3()
