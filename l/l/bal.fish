@@ -2,17 +2,17 @@ function bal
 
     # This function is for getting the balances of all of your accounts 
     # Wallets set 
-    # w1 0xA00AB3fb59F337601b2D9f6b3e67C88AB2D84ABe
-    # w2 0xAC767126aCe1d918Db578679B8a9a8E0A41EE112
-    # w3 0xe3961e84bF293018E930Ee96DF7996812c019eC5
-    # w4 0xD1d36E9342215f1aF090FD1F6bA46D1FB4C34cc0
+    # w1 0x498b302db295199b81af90Df66F330D5dA2776D0
+    # w2 0xfB4E8AfEaB22c5a7AC8F4c719D2D75b93bdc5CFa
+    # w3 0x9436E627D55c5c7d8247bEa3d5E35B9ab8e44006
+    # w4 0xFB4086b4Ae138B2e91B64f47385ffdac8112f526
 
     # Set Variables - Just Jeep changin this all the
     # Wallets 
-    set A1 0xA00AB3fb59F337601b2D9f6b3e67C88AB2D84ABe
-    set A2 0xAC767126aCe1d918Db578679B8a9a8E0A41EE112
-    set A3 0xe3961e84bF293018E930Ee96DF7996812c019eC5
-    set A4 0xD1d36E9342215f1aF090FD1F6bA46D1FB4C34cc0
+    set A1 0x498b302db295199b81af90Df66F330D5dA2776D0
+    set A2 0xfB4E8AfEaB22c5a7AC8F4c719D2D75b93bdc5CFa
+    set A3 0x9436E627D55c5c7d8247bEa3d5E35B9ab8e44006
+    set A4 0xFB4086b4Ae138B2e91B64f47385ffdac8112f526
 
     # Set RPC here 
     set GOE https://eth-goerli.g.alchemy.com/v2/wfowE284fYsqh-laeF5qmjOTQ3YTwuX_  
@@ -37,8 +37,8 @@ function bal
     echo ""
     echo (set_color 0000ff)"***********************************************************************"
     echo (set_color 0000ff)""
-    echo (set_color 0000ff)"WRL1  : 0xA00AB3fb59F337601b2D9f6b3e67C88AB2D84ABe "
-    echo (set_color 0000ff)"WRL1K : 0xaeab6783e24ee5f27fc75d7cd43ac6a5c9c254ec7a51827430fb6ea6b1c6694e"
+    echo (set_color 0000ff)"WRL1  : 0x498b302db295199b81af90Df66F330D5dA2776D0 "
+    echo (set_color 0000ff)"WRL1K : 0x608a510934421f52fa4636080a8765f742122c527aec807fb83900ae4ed57a64"
     echo (set_color 0000ff)""
     echo (set_color 0000ff)"***********************************************************************"
     set w1g (cast balance $A1 --rpc-url $GOE ) 
@@ -54,8 +54,8 @@ function bal
     echo " "
     echo (set_color ee82ee)"***********************************************************************"
     echo (set_color ee82ee)""
-    echo (set_color ee82ee)"WRL2  : 0xAC767126aCe1d918Db578679B8a9a8E0A41EE112"
-    echo (set_color ee82ee)"WRL2K : 0x8efb214d6f66694e16f9988571357c95940a649f835e988e53c0204ac90653de"
+    echo (set_color ee82ee)"WRL2  : 0xfB4E8AfEaB22c5a7AC8F4c719D2D75b93bdc5CFa"
+    echo (set_color ee82ee)"WRL2K : 0xbfd81cadf97bed4c4a5f75b12f1b5e9315eee787f24a9b14b1c94dde2f139bba"
     echo (set_color ee82ee)""
     echo (set_color ee82ee)"***********************************************************************"
     set w1g (cast balance $A2 --rpc-url $GOE )
@@ -71,8 +71,8 @@ function bal
     echo ""
     echo (set_color 3cb371)"***********************************************************************"
     echo (set_color 3cb371)""
-    echo (set_color 3cb371)"WRL3  : 0xe3961e84bF293018E930Ee96DF7996812c019eC5"
-    echo (set_color 3cb371)"WRL3K : 0xb9b9b4db9f1bafc1653e5794a929ec86b7a0528e5c70e4749b4d03a4a5b3af03"
+    echo (set_color 3cb371)"WRL3  : 0x9436E627D55c5c7d8247bEa3d5E35B9ab8e44006"
+    echo (set_color 3cb371)"WRL3K : 0x49643a1fac5e213c767dad6f7654d5288b564b5bda1c39c2c340e184649f0a71"
     echo (set_color 3cb371)""
     echo (set_color 3cb371)"***********************************************************************"
     set w1g (cast balance $A3 --rpc-url $GOE)
@@ -88,8 +88,8 @@ function bal
     echo " "
     echo (set_color ffa500)"***********************************************************************"
     echo (set_color ffa500)""
-    echo (set_color ffa500)"WRL4  : 0xD1d36E9342215f1aF090FD1F6bA46D1FB4C34cc0"
-    echo (set_color ffa500)"WRL4K : 0xb2fec2d29c2dc5e57452ba9e91792d908e89e77c1d9ba32324c5becc8763c41d"
+    echo (set_color ffa500)"WRL4  : 0xFB4086b4Ae138B2e91B64f47385ffdac8112f526"
+    echo (set_color ffa500)"WRL4K : 0x8e6362e5d9a4a281680161a50c8fb5898929095b18ebbd58c716d844814cce24"
     echo (set_color ffa500)""
     echo (set_color ffa500)"***********************************************************************"
     set w1g (cast balance $A4 --rpc-url $GOE)
